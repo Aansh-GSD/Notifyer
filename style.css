@@ -8,7 +8,32 @@ body {
 
 canvas {
   border: 2px solid white;
-  display: block;
-  margin: 0 auto;
   background-color: #202020;
+  display: block;
+  margin: 10px auto;
+}
+
+#controls {
+  margin-bottom: 10px;
+}
+
+#touch-controls {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+#touch-controls h3 {
+  margin: 5px;
+}
+
+#touch-controls button {
+  margin: 5px;
+  font-size: 18px;
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
