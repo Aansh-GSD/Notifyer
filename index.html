@@ -9,6 +9,28 @@
 <body>
   <h1>2-Player Fighter Game</h1>
   <canvas id="gameCanvas" width="800" height="600"></canvas>
+  <div id="controls">
+    <button onclick="restartGame()">Restart Game</button>
+  </div>
+  <div id="touch-controls">
+    <div id="p1-controls">
+      <h3>Player 1</h3>
+      <button ontouchstart="keys.a=true" ontouchend="keys.a=false">◄</button>
+      <button ontouchstart="keys.d=true" ontouchend="keys.d=false">►</button>
+      <button ontouchstart="keys.w=true" ontouchend="keys.w=false">▲</button>
+      <button ontouchstart="keys.s=true" ontouchend="keys.s=false">▼</button>
+      <button ontouchstart="keys[' '] = true" ontouchend="keys[' '] = false">Attack</button>
+    </div>
+    <div id="p2-controls">
+      <h3>Player 2</h3>
+      <button ontouchstart="keys.ArrowLeft=true" ontouchend="keys.ArrowLeft=false">◄</button>
+      <button ontouchstart="keys.ArrowRight=true" ontouchend="keys.ArrowRight=false">►</button>
+      <button ontouchstart="keys.ArrowUp=true" ontouchend="keys.ArrowUp=false">▲</button>
+      <button ontouchstart="keys.ArrowDown=true" ontouchend="keys.ArrowDown=false">▼</button>
+      <button ontouchstart="keys.Enter=true" ontouchend="keys.Enter=false">Attack</button>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
+
